@@ -1,0 +1,289 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" FontFamily="./#Play" Height="400" Width="320">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <!-- Шапка -->
+        <Border Grid.Row="0" Grid.Column="0" Padding="5" CornerRadius="4 4 0 0" Background="#404047">
+            <TextBlock TextAlignment="Center"><Bold Foreground="#e0e0e7">Четверг, 19 октября</Bold></TextBlock>
+        </Border>
+
+        <!-- Тело таблицы -->
+        <Border Grid.Row="1" Grid.Column="0" CornerRadius="0 0 4 4" BorderThickness="1 0 1 1" BorderBrush="#404047">
+            <!-- Контейнер для строк -->
+            <StackPanel Orientation="Vertical">
+                <!-- Контейнер одной строки (одной пары) -->
+                <StackPanel>
+                    <!-- Сетка, обернутая в рамку, для отображения расписания звонков -->
+                    <Border Background="#f0f0f0" BorderThickness="0 1 0 1" BorderBrush="#dedee0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Padding="4 0" FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Left" Grid.Column="0">08:00</TextBlock>
+                            <TextBlock FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Center" Grid.Column="1">70м</TextBlock>
+                            <TextBlock FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Center" Grid.Column="2">10м</TextBlock>
+                            <TextBlock Padding="4 0" FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Right" Grid.Column="3">09:10</TextBlock>
+                        </Grid>
+                    </Border>
+                    <!-- Сетка для расписания занятия -->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="24"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <!-- Номер пары -->
+                        <TextBlock Grid.RowSpan="2" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="14">1</TextBlock>
+
+                        <!-- Строка с названием дисциплины -->
+                        <TextBlock Grid.Row="0" Grid.Column="1" Padding="2 0" FontWeight="DemiBold">МДК.01.01 РПМ</TextBlock>
+
+                        <!-- Строка с ФИО преподавателя -->
+                        <TextBlock Grid.Row="1" Grid.Column="1" Padding="2 0" FontStyle="Italic" FontSize="10">Афанасьев Алексей Васильевич</TextBlock>
+
+                        <!-- Строка с аудиторией -->
+                        <TextBlock Grid.Row="0" Grid.Column="2" Padding="2 0">21</TextBlock>
+                    </Grid>
+                </StackPanel>
+
+                <!-- Контейнер одной строки (одной пары) COPY PASTE -->
+                <StackPanel>
+                    <!-- Сетка, обернутая в рамку, для отображения расписания звонков -->
+                    <Border Background="#f0f0f0" BorderThickness="0 1 0 1" BorderBrush="#dedee0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Padding="4 0" FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Left" Grid.Column="0">09:20</TextBlock>
+                            <TextBlock Padding="4 0" FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Center" Grid.Column="1">70м</TextBlock>
+                            <TextBlock Padding="4 0" FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Center" Grid.Column="2">30м</TextBlock>
+                            <TextBlock Padding="4 0" FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Right" Grid.Column="3">10:30</TextBlock>
+                        </Grid>
+                    </Border>
+                    <!-- Сетка для расписания занятия -->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="24"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <!-- Номер пары -->
+                        <TextBlock Grid.RowSpan="2" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="14">2</TextBlock>
+
+                        <!-- Строка с названием дисциплины -->
+                        <TextBlock Grid.Row="0" Grid.Column="1" Padding="2 0" FontWeight="DemiBold">МДК.01.01 РПМ</TextBlock>
+
+                        <!-- Строка с ФИО преподавателя -->
+                        <TextBlock Grid.Row="1" Grid.Column="1" Padding="2 0" FontStyle="Italic" FontSize="10">Афанасьев Алексей Васильевич</TextBlock>
+
+                        <!-- Строка с аудиторией -->
+                        <TextBlock Grid.Row="0" Grid.Column="2" Padding="2 0">21</TextBlock>
+                    </Grid>
+                </StackPanel>
+
+                <!-- Контейнер одной строки (одной пары) COPY PASTE -->
+                <StackPanel>
+                    <!-- Сетка, обернутая в рамку, для отображения расписания звонков -->
+                    <Border Background="#f0f0f0" BorderThickness="0 1 0 1" BorderBrush="#dedee0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Padding="4 0" FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Left" Grid.Column="0">11:00</TextBlock>
+                            <TextBlock Padding="4 0" FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Center" Grid.Column="1">70м</TextBlock>
+                            <TextBlock Padding="4 0" FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Center" Grid.Column="2">90м</TextBlock>
+                            <TextBlock Padding="4 0" FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Right" Grid.Column="3">12:10</TextBlock>
+                        </Grid>
+                    </Border>
+                    <!-- Сетка для расписания занятия -->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="24"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <!-- Номер пары -->
+                        <TextBlock Grid.RowSpan="2" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="14">3</TextBlock>
+
+                        <!-- Строка с названием дисциплины -->
+                        <TextBlock Grid.Row="0" Grid.Column="1" Padding="2 0" FontWeight="DemiBold">МДК.01.01 РПМ</TextBlock>
+
+                        <!-- Строка с ФИО преподавателя -->
+                        <TextBlock Grid.Row="1" Grid.Column="1" Padding="2 0" FontStyle="Italic" FontSize="10">Афанасьев Алексей Васильевич</TextBlock>
+
+                        <!-- Строка с аудиторией -->
+                        <TextBlock Grid.Row="0" Grid.Column="2" Padding="2 0">21</TextBlock>
+                    </Grid>
+                </StackPanel>
+
+                <!-- Контейнер одной строки (одной пары) COPY PASTE -->
+                <StackPanel>
+                    <!-- Сетка, обернутая в рамку, для отображения расписания звонков -->
+                    <Border Background="#f0f0f0" BorderThickness="0 1 0 1" BorderBrush="#dedee0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Padding="4 0" FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Left" Grid.Column="0">13:40</TextBlock>
+                            <TextBlock Padding="4 0" FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Center" Grid.Column="1">70м</TextBlock>
+                            <TextBlock Padding="4 0" FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Center" Grid.Column="2">20м</TextBlock>
+                            <TextBlock Padding="4 0" FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Right" Grid.Column="3">14:50</TextBlock>
+                        </Grid>
+                    </Border>
+                    <!-- Сетка для расписания занятия -->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="24"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <!-- Номер пары -->
+                        <TextBlock Grid.RowSpan="2" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="14">4</TextBlock>
+
+                        <!-- Строка с названием дисциплины -->
+                        <TextBlock Grid.Row="0" Grid.Column="1" Padding="2 0" FontWeight="DemiBold"></TextBlock>
+
+                        <!-- Строка с ФИО преподавателя -->
+                        <TextBlock Grid.Row="1" Grid.Column="1" Padding="2 0" FontStyle="Italic" FontSize="10"></TextBlock>
+
+                        <!-- Строка с аудиторией -->
+                        <TextBlock Grid.Row="0" Grid.Column="2" Padding="2 0"></TextBlock>
+                    </Grid>
+                </StackPanel>
+
+                <!-- Контейнер одной строки (одной пары) COPY PASTE -->
+                <StackPanel>
+                    <!-- Сетка, обернутая в рамку, для отображения расписания звонков -->
+                    <Border Background="#f0f0f0" BorderThickness="0 1 0 1" BorderBrush="#dedee0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Padding="4 0" FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Left" Grid.Column="0">15:10</TextBlock>
+                            <TextBlock Padding="4 0" FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Center" Grid.Column="1">70м</TextBlock>
+                            <TextBlock Padding="4 0" FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Center" Grid.Column="2">10м</TextBlock>
+                            <TextBlock Padding="4 0" FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Right" Grid.Column="3">16:20</TextBlock>
+                        </Grid>
+                    </Border>
+                    <!-- Сетка для расписания занятия -->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="24"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <!-- Номер пары -->
+                        <TextBlock Grid.RowSpan="2" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="14">5</TextBlock>
+
+                        <!-- Строка с названием дисциплины -->
+                        <TextBlock Grid.Row="0" Grid.Column="1" Padding="2 0" FontWeight="DemiBold"></TextBlock>
+
+                        <!-- Строка с ФИО преподавателя -->
+                        <TextBlock Grid.Row="1" Grid.Column="1" Padding="2 0" FontStyle="Italic" FontSize="10"></TextBlock>
+
+                        <!-- Строка с аудиторией -->
+                        <TextBlock Grid.Row="0" Grid.Column="2" Padding="2 0"></TextBlock>
+                    </Grid>
+                </StackPanel>
+
+                <!-- Контейнер одной строки (одной пары) COPY PASTE -->
+                <StackPanel>
+                    <!-- Сетка, обернутая в рамку, для отображения расписания звонков -->
+                    <Border Background="#f0f0f0" BorderThickness="0 1 0 1" BorderBrush="#dedee0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Padding="4 0" FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Left" Grid.Column="0">16:30</TextBlock>
+                            <TextBlock Padding="4 0" FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Center" Grid.Column="1">70м</TextBlock>
+                            <TextBlock Padding="4 0" FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Center" Grid.Column="2">10м</TextBlock>
+                            <TextBlock Padding="4 0" FontStyle="Italic" FontSize="9" Foreground="#606060" TextAlignment="Right" Grid.Column="3">17:40</TextBlock>
+                        </Grid>
+                    </Border>
+                    <!-- Сетка для расписания занятия -->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="24"/>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+
+                        <!-- Номер пары -->
+                        <TextBlock Grid.RowSpan="2" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="14">6</TextBlock>
+
+                        <!-- Строка с названием дисциплины -->
+                        <TextBlock Grid.Row="0" Grid.Column="1" Padding="2 0" FontWeight="DemiBold"></TextBlock>
+
+                        <!-- Строка с ФИО преподавателя -->
+                        <TextBlock Grid.Row="1" Grid.Column="1" Padding="2 0" FontStyle="Italic" FontSize="10"></TextBlock>
+
+                        <!-- Строка с аудиторией -->
+                        <TextBlock Grid.Row="0" Grid.Column="2" Padding="2 0"></TextBlock>
+                    </Grid>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
